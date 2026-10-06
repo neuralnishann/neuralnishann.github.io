@@ -1,0 +1,143 @@
+# Jekyll Configuration
+
+# Site settings
+title: ""
+name: "SMG Arafat N."
+email: neuralnishan@protonmail.com
+logo: /images/pro_pic_4.png
+timezone: Europe/Berlin
+author:
+  name: SMG Arafat N.
+  avatar: /images/pro_pic_6.jpg
+  uri: https://neuralnishan.pro
+  email: neuralnishan@protonmail.com
+  bio: Building and Shipping AI at Scale
+  location: Neural Universe Lab(NUL)
+  github: neuralnishan
+  linkedin: smnishan
+  twitter: neuralnishan
+  url: https://neuralnishan.pro
+
+# Analytics
+google_analytics_id:
+# Backwards-compatible key used by the analytics include
+google_analytics: 
+analytics:
+  provider: custom
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  achievements:
+    output: true
+    permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  # Posts
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      share: true
+      comments: true
+
+  # Pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+      
+  # Projects
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+      
+  # Achievements
+  - scope:
+      path: ""
+      type: "achievements"
+    values:
+      layout: "single"
+      author_profile: true
+      
+  # Teaching
+  - scope:
+      path: ""
+      type: "teaching"
+    values:
+      layout: "single"
+      author_profile: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Sass warning controls (keeps local serve output readable)
+sass:
+  sass_dir: _sass
+  load_paths:
+    - _sass
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - if-function
+    - global-builtin
+    - slash-div
+    - color-functions
+
+# Breadcrumbs
+breadcrumbs: true
+
+# Comments
+comments:
+  provider: false
+
+# Search
+search: true
+search_full_content: true
+
+# Other settings
+include:
+  - _headers
+  - assets/js/_main.js
+
+exclude:
+  - README.md
+  - runcommand.txt
+  - docs
+  - config
+  - scripts
+  - source
+  - static
+  - .github
+  - .vscode
+  - node_modules
+  - package.json
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock

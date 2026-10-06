@@ -1,0 +1,165 @@
+# Jekyll Configuration - Enterprise Grade
+# Structured project with proper source separation
+
+# Source and Destination
+source: source
+destination: _site
+collections_dir: source
+include: [".htaccess"]
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - ".bundle/"
+  - "node_modules/"
+  - "docs/"
+  - "scripts/"
+  - "build/"
+  - ".git/"
+  - ".github/"
+
+# Site Settings
+title: ""
+name: "S M G Arafat N."
+email: neuralnishan@protonmail.com
+logo: /assets/images/pro_pic_4.png
+description: "Azure AI & Data Solutions Architect | Building production-ready AI/ML solutions"
+url: "https://neuralnishan.pro"
+baseurl: ""
+repository: "neuralnishan/neuralnishan.github.io"
+timezone: Europe/Berlin
+
+# Author Information
+author:
+  name: S M G Arafat N.
+  avatar: /assets/images/pro_pic_6.jpg
+  uri: https://neuralnishan.pro
+  email: neuralnishan@protonmail.com
+  bio: Azure AI & Data Solutions Architect | Building and Shipping AI at Scale ⚙️@NUL | AI Research
+  location: Neural Universe Lab (NUL)
+  github: neuralnishan
+  linkedin: smnishan
+  twitter: neuralnishan
+  url: https://neuralnishan.pro
+
+# Analytics
+google_analytics_id:
+google_analytics:
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:slug/
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  achievements:
+    output: true
+    permalink: /achievements/:slug/
+  teaching:
+    output: true
+    permalink: /teaching/:slug/
+  portfolio:
+    output: true
+    permalink: /portfolio/:slug/
+  talks:
+    output: true
+    permalink: /talks/:slug/
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Sass/SCSS
+sass:
+  sass_dir: source/_sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: /blog/page:num/
+  title: ":title"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
+# Defaults
+defaults:
+  # Posts
+  - scope:
+      path: "source/posts"
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      share: true
+      comments: true
+
+  # Pages
+  - scope:
+      path: "source/pages"
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+
+  # Projects
+  - scope:
+      path: "source/projects"
+      type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+
+  # Achievements
+  - scope:
+      path: "source/achievements"
+      type: "achievements"
+    values:
+      layout: "single"
+      author_profile: true
+
+  # Teaching
+  - scope:
+      path: "source/teaching"
+      type: "teaching"
+    values:
+      layout: "single"
+      author_profile: true
+
+  # Portfolio
+  - scope:
+      path: "source/portfolio"
+      type: "portfolio"
+    values:
+      layout: "single"
+      author_profile: true
+
+  # Talks
+  - scope:
+      path: "source/talks"
+      type: "talks"
+    values:
+      layout: "single"
+      author_profile: true

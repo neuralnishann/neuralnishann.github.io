@@ -1,0 +1,65 @@
+<div
+  class="protected-access js-protected-access"
+  data-protected-url="{{ page.protected_url | escape_once }}"
+  data-protected-mode="{{ page.protected_mode | default: 'view' | escape_once }}"
+  data-protected-action="{{ page.protected_action | default: 'Continue' | escape_once }}"
+  data-protected-title="{{ page.protected_title | default: page.title | escape_once }}"
+>
+  <div class="protected-access__eyebrow">Protected Resource</div>
+  <h2 class="protected-access__title">{{ page.protected_title | default: page.title }}</h2>
+  <p class="protected-access__text">
+    This resource is behind an extra access check. Complete the countdown and captcha challenge to continue.
+  </p>
+
+  <ul class="protected-access__rules">
+    <li>Access is monitored locally in this browser session.</li>
+    <li>Repeated failed attempts will temporarily lock this access page.</li>
+    <li>Verification and download links open only after the challenge is passed.</li>
+  </ul>
+
+  <div class="protected-access__countdown">
+    <span class="protected-access__countdown-label">Wait time</span>
+    <span class="protected-access__countdown-value" data-countdown-value>4s</span>
+  </div>
+
+  <div class="protected-access__challenge">
+    <div class="protected-access__challenge-label">Captcha code</div>
+    <div class="protected-access__challenge-code" data-challenge-code>------</div>
+  </div>
+
+  <label class="protected-access__field">
+    <span class="protected-access__field-label">Enter the code above</span>
+    <input
+      class="protected-access__input"
+      type="text"
+      maxlength="6"
+      autocomplete="off"
+      autocapitalize="characters"
+      spellcheck="false"
+      inputmode="text"
+      data-challenge-input
+      placeholder="Type 6 characters"
+    >
+  </label>
+
+  <label class="protected-access__checkbox">
+    <input type="checkbox" data-acknowledge>
+    <span>I understand this link is protected and intended for legitimate viewing only.</span>
+  </label>
+
+  <div class="protected-access__honeypot" aria-hidden="true">
+    <label for="protected-website-field">Website</label>
+    <input id="protected-website-field" type="text" tabindex="-1" autocomplete="off" data-honeypot>
+  </div>
+
+  <div class="protected-access__actions">
+    <button type="button" class="btn btn--primary protected-access__button" data-proceed-button disabled>
+      {{ page.protected_action | default: "Continue" }}
+    </button>
+    <button type="button" class="btn btn--inverse protected-access__button" data-refresh-button>
+      New Code
+    </button>
+  </div>
+
+  <p class="protected-access__status" data-status aria-live="polite"></p>
+</div>

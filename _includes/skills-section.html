@@ -1,0 +1,221 @@
+<!-- Modern Skills Section with Visual Hierarchy -->
+
+<div class="modern-skills-section">
+  <h2 style="text-align: left; margin-bottom: 3rem;">Technical Expertise</h2>
+  
+  <div class="skills-container">
+    <!-- Programming Languages -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-code"></i>
+        <h3>Programming Languages</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">R</span>
+        <span class="skill-tag">T-SQL</span>
+      </div>
+    </div>
+
+    <!-- Cloud Platforms -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Platforms</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">Microsoft Azure</span>
+      </div>
+    </div>
+
+    <!-- ML/AI Frameworks -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-brain"></i>
+        <h3>ML/AI Frameworks</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">MLflow</span>
+      </div>
+    </div>
+
+    <!-- Data Engineering -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-database"></i>
+        <h3>Data Engineering</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">Apache Spark</span>
+        <span class="skill-tag">Apache Airflow</span>
+        <span class="skill-tag">dbt</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+      </div>
+    </div>
+
+    <!-- DevOps & Tools -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-tools"></i>
+        <h3>DevOps & Tools</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">CI/CD</span>
+        <span class="skill-tag">GitHub</span>
+      </div>
+    </div>
+
+    <!-- Visualization -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-chart-bar"></i>
+        <h3>Visualization & BI</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">Power BI</span>
+  
+      </div>
+    </div>
+
+    <!-- Specializations -->
+    <div class="skill-category-box">
+      <div class="skill-category-header">
+        <i class="fas fa-star"></i>
+        <h3>Specializations</h3>
+      </div>
+      <div class="skills-tags">
+        <span class="skill-tag">ML</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">MLOps</span>
+        <span class="skill-tag">A/B Testing</span>
+        <span class="skill-tag">Statistical Analysis</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.modern-skills-section {
+  margin: 4rem 0;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-category-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-category-box:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.skill-category-box:hover::before {
+  opacity: 1;
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.skill-category-header i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-lighter);
+  border-radius: 8px;
+}
+
+.skill-category-header h3 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--text);
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-tag {
+  background: var(--card);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 1px solid var(--border);
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>

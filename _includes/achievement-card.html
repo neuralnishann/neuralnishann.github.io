@@ -1,0 +1,52 @@
+<!-- Modern Achievement Card Template -->
+
+<div class="achievement-card card">
+  <div class="card-header">
+    <div class="card-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div>
+      <h3 class="card-title">{{ achievement_title }}</h3>
+      <p class="card-subtitle">{{ achievement_date }}</p>
+    </div>
+  </div>
+  <div class="card-body">
+    {{ achievement_description }}
+  </div>
+  {% if achievement_url %}
+  <a href="{{ achievement_url }}" class="btn btn-primary btn-sm">View Details →</a>
+  {% endif %}
+</div>
+
+<style>
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+.card-body {
+  margin-top: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+</style>

@@ -1,0 +1,10 @@
+bundle config set --local path vendor/bundle
+bundle install
+bundle update jekyll-sass-converter
+bundle clean --force
+bundle exec jekyll build
+bundle exec jekyll serve
+
+git add .
+git commit -m "SiteUp"
+git push

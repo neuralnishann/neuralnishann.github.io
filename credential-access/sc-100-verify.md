@@ -1,0 +1,14 @@
+---
+layout: single
+title: 'Protected Access: SC-100'
+permalink: '/credential-access/sc-100-verify/'
+author_profile: true
+robots: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate
+sitemap: false
+protected_title: 'SC-100'
+protected_mode: 'verify'
+protected_action: 'Open Verification'
+protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/cbbf1932f8214f3'
+---
+
+{% include protected-access-card.html %}

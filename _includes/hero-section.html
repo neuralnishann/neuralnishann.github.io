@@ -1,0 +1,206 @@
+<!-- Modern Hero Section for Homepage -->
+
+<div class="modern-hero">
+  <div class="modern-hero__background">
+    <div class="modern-hero__gradient"></div>
+    <div class="modern-hero__particles"></div>
+  </div>
+  
+  <div class="modern-hero__content">
+    <div class="modern-hero__text">
+      <h1 class="modern-hero__title">
+        <span class="modern-hero__accent">Azure AI & Data</span> Solutions Architect
+      </h1>
+      <p class="modern-hero__subtitle">
+        Building production-ready AI/ML solutions, cloud infrastructure, and enterprise data platforms at scale
+      </p>
+      <div class="modern-hero__ctas">
+        <a href="https://github.com/neuralnishan" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/smnishan" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="modern-hero__badges">
+        <span class="badge badge-primary"><i class="fas fa-cube"></i> Cloud Architect</span>
+        <span class="badge badge-secondary"><i class="fas fa-brain"></i> ML/AI Specialist</span>
+      </div>
+    </div>
+    <div class="modern-hero__stats">
+      <div class="stat-card">
+        <div class="stat-number">17+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Years Azure</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.modern-hero {
+  position: relative;
+  padding: 80px 2rem;
+  overflow: hidden;
+  margin: -2rem -2rem 0 -2rem;
+  background: var(--card);
+}
+
+html.dark .modern-hero {
+  background: var(--card);
+}
+
+html.light .modern-hero {
+  background: var(--card);
+}
+
+.modern-hero__background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.modern-hero__gradient {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.modern-hero__particles {
+  position: absolute;
+  inset: 0;
+  background: none;
+  animation: none;
+}
+
+@keyframes particles {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, -10px); }
+}
+
+.modern-hero__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.modern-hero__text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+html.light .modern-hero__text h1 {
+  color: var(--primary);
+}
+
+.modern-hero__accent {
+  display: block;
+  font-size: 2rem;
+}
+
+.modern-hero__subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.modern-hero__ctas {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.modern-hero__badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modern-hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .modern-hero {
+    padding: 60px 1.5rem;
+  }
+
+  .modern-hero__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .modern-hero__text h1 {
+    font-size: 2rem;
+  }
+
+  .modern-hero__accent {
+    font-size: 1.5rem;
+  }
+
+  .modern-hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .modern-hero__ctas {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modern-hero__stats {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

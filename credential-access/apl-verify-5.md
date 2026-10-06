@@ -1,0 +1,14 @@
+---
+layout: single
+title: 'Protected Access: APL'
+permalink: '/credential-access/apl-verify-5/'
+author_profile: true
+robots: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate
+sitemap: false
+protected_title: 'APL'
+protected_mode: 'verify'
+protected_action: 'Open Verification'
+protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/bdc0a2d92d552614'
+---
+
+{% include protected-access-card.html %}

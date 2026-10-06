@@ -1,0 +1,13 @@
+# Authors
+
+Nishan:
+  name        : "Site Owner"
+  uri         : "http://neuralnishan.pro"
+  email       : "neuralnishan@protonmail.com"
+  bio         : "AI Engineer & Data Scientist | Azure & MLOps"
+  avatar      : "/images/pro_pic_7.png"
+  location    : "Based in Europe"
+  twitter     : "neuralnishan"
+  github      : "neuralnishan"
+  linkedin    : "neuralnishan"
+  feed        : "/feed.xml"

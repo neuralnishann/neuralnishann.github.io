@@ -1,0 +1,314 @@
+/* Landing Page Professional Refinements */
+
+/* Overall Page Structure */
+body {
+  overflow-x: hidden;
+}
+
+.page {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Section Spacing and Flow */
+.page__inner-wrap {
+  padding: 0;
+}
+
+#main {
+  background: var(--bg);
+}
+
+#main > .page {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section Integration */
+.modern-hero {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+html.dark .modern-hero {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* About Section */
+#about {
+  display: contents;
+}
+
+/* Consistent Content Padding */
+.intro-section,
+.focus-cards,
+.credentials-grid,
+.cert-section,
+.contact-grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .intro-section,
+  .focus-cards,
+  .credentials-grid,
+  .cert-section,
+  .contact-grid {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Section Headers with Consistent Styling */
+h2 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  position: relative;
+}
+
+html.light h2 {
+  color: var(--primary);
+}
+
+h2:first-of-type {
+  margin-top: 2rem;
+}
+
+h3 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Skills Section Centering */
+.modern-skills-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Image Styling */
+img[alt*="Certification"],
+img[alt*="certification"] {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+html.dark img[alt*="Certification"],
+html.dark img[alt*="certification"] {
+  filter: brightness(0.95);
+}
+
+img[alt*="Certification"]:hover,
+img[alt*="certification"]:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Visual Hierarchy in Lists */
+ul, ol {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 2rem;
+  padding-left: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+/* Code Block Styling */
+code {
+  background: var(--card);
+  color: var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+pre {
+  background: var(--dark-card);
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  border-left: 4px solid var(--primary-light);
+  margin: 1.5rem 2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  pre {
+    margin: 1.5rem 1.5rem;
+    padding: 1rem;
+  }
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Smooth Page Transitions */
+.page {
+  animation: pageEnter 0.5s ease-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Consistency */
+.btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Link Hover States */
+a:not(.btn):not(.social-icons a) {
+  position: relative;
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:not(.btn):not(.social-icons a):hover {
+  color: var(--primary);
+}
+
+/* Table Styling for Clean Look */
+table {
+  max-width: 100%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: var(--card);
+  color: var(--primary);
+  font-weight: 700;
+  padding: 1rem;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: var(--card);
+}
+
+/* Blockquote Styling */
+blockquote {
+  border-left: 4px solid var(--primary);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--card);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* Focus Management */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .masthead,
+  .sidebar,
+  .dark-toggle,
+  .color-switcher,
+  .modern-hero,
+  .page__footer {
+    display: none;
+  }
+
+  #main {
+    display: block;
+  }
+
+  .page {
+    background: white;
+    color: black;
+  }
+
+  h2 {
+    color: var(--primary-dark);
+    -webkit-text-fill-color: unset;
+    background: unset;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}

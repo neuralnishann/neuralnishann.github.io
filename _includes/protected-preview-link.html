@@ -1,0 +1,14 @@
+<div class="protected-preview">
+  <p class="protected-preview__title">Certificate preview protected</p>
+  <p class="protected-preview__text">
+    This preview is not embedded directly on the public page. Open it through the protected access screen.
+  </p>
+  <p class="protected-preview__action">
+    <a class="btn btn--primary" href="{{ include.href | relative_url }}">
+      {{ include.button_text | default: "Open Protected Preview" }}
+    </a>
+  </p>
+  {% if include.caption %}
+    <p class="protected-preview__caption">{{ include.caption }}</p>
+  {% endif %}
+</div>

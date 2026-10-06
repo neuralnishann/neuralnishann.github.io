@@ -1,0 +1,89 @@
+<!-- Modern Publication Card -->
+
+<div class="publication-card card">
+  <div class="card-header">
+    <div class="card-icon" style="background: linear-gradient(135deg, #8b5cf6, #6366f1); font-size: 1.2rem;">
+      <i class="fas fa-newspaper"></i>
+    </div>
+    <div style="flex: 1;">
+      {% if include.post.paperurl %}
+        <h3 class="card-title">
+          <a href="{{ include.post.paperurl }}" target="_blank" rel="noopener noreferrer">
+            {{ include.post.title }}
+          </a>
+        </h3>
+      {% else %}
+        <h3 class="card-title">{{ include.post.title }}</h3>
+      {% endif %}
+      
+      {% if include.post.venue and include.post.date %}
+        <p class="card-subtitle">{{ include.post.venue }} • {{ include.post.date | date: "%Y" }}</p>
+      {% elsif include.post.venue %}
+        <p class="card-subtitle">{{ include.post.venue }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if include.post.excerpt %}
+    <div class="card-body" style="margin-top: 1rem;">
+      {{ include.post.excerpt | markdownify | strip_html }}
+    </div>
+  {% endif %}
+
+  {% if include.post.citation %}
+    <div class="citation-box" style="margin-top: 1rem; padding: 1rem; background: var(--card); border-left: 3px solid var(--primary); border-radius: 4px; font-size: 0.85rem;">
+      <strong style="color: var(--primary);">Citation:</strong>
+      <p style="margin: 0.5rem 0 0 0; color: var(--text-muted); font-style: italic;">{{ include.post.citation }}</p>
+    </div>
+  {% endif %}
+
+  {% if include.post.paperurl %}
+    <a href="{{ include.post.paperurl }}" class="btn btn-primary btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> Read Paper
+    </a>
+  {% endif %}
+</div>
+
+<style>
+.publication-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-card .card-title a {
+  color: var(--primary);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.publication-card .card-title a:hover {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.publication-card .card-body {
+  flex: 1;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.citation-box {
+  background: var(--bg);
+  border-left: 3px solid var(--primary-light);
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .publication-card .card-header {
+    flex-direction: column;
+  }
+
+  .publication-card .card-icon {
+    align-self: flex-start;
+  }
+}
+</style>

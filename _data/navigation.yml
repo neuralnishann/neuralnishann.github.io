@@ -1,0 +1,49 @@
+# main links links
+main:
+
+  - title: "Blog"
+    url: /year-archive/
+    icon: "📝"
+
+  - title: "Education"
+    url: /education/
+    icon: "🎓"
+
+  - title: "Experience"
+    url: /experience/
+    icon: "💼"
+    
+  - title: "Projects"
+    url: /projects/
+    icon: "📁"
+    
+  - title: "Certifications"
+    url: /certification/
+    icon: "📜"
+
+  - title: "Specializations"
+    url: /specialization/
+    icon: "🏅"
+
+  - title: "Achievements"
+    url: /achievements/
+    icon: "🏆"    
+
+  - title: "CV"
+    url: /cv/
+    icon: "📄"
+
+#  - title: "Portfolio"
+#    url: /portfolio/
+
+# - title: "Teaching"
+#  url: /teaching/    
+      
+# - title: "Blog Posts"
+#   url: /year-archive/
+
+# - title: "Publications"
+#  url: /publications/  
+ 
+# - title: "Guide"
+#  url: /markdown/
