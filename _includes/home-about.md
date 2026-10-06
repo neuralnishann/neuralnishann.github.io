@@ -78,11 +78,11 @@
 <section class="home-credentials" aria-labelledby="home-credentials-title">
   <div class="home-section-heading">
     <p class="home-kicker">Credentials</p>
-    <h2 id="home-credentials-title">Selected certifications</h2>
+    <h2 id="home-credentials-title">Microsoft Certifications</h2>
   </div>
   <div class="home-credential-grid">
     <div class="home-credential-card"><strong>AB-100</strong><span>Agentic AI Business Solutions Architect</span></div>
-    <div class="home-credential-card"><strong>AFS-201</strong><span>Salesforce Agentforce Specialist</span></div>
+    <div class="home-credential-card"><strong>SC-100</strong><span>Cybersecurity Architect Expert</span></div>
     <div class="home-credential-card"><strong>AZ-305</strong><span>Azure Solutions Architect Expert</span></div>
   </div>
   <a class="home-credentials-link" href="{{ '/certification/' | relative_url }}">See all credentials <span aria-hidden="true">→</span></a>
