@@ -55,14 +55,6 @@
     }
   }
 
-  function isExternalUrl(url) {
-    try {
-      return new URL(url, window.location.href).origin !== window.location.origin;
-    } catch (error) {
-      return false;
-    }
-  }
-
   ready(function () {
     var root = document.querySelector(".js-protected-access");
     if (!root) {
@@ -219,11 +211,8 @@
         return;
       }
 
-      if (isExternalUrl(protectedUrl)) {
-        window.open(protectedUrl, "_blank", "noopener,noreferrer");
-        return;
-      }
-
+      // Navigate in the current tab so external verification pages aren't
+      // blocked as popups after the protected-access challenge.
       window.location.assign(protectedUrl);
     }
 

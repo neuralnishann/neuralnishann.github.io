@@ -2,18 +2,19 @@
 
 A modern, enterprise-grade portfolio website powered by Jekyll and hosted on GitHub Pages. Designed for data scientists, architects, and tech professionals.
 
-**Live Site:** [neuralnishan.github.io](https://neuralnishann.github.io)  
+**Live Site:** [neuralnishann.github.io](https://neuralnishann.github.io)  
 **Theme:** Modern Professional with Dark/Light Mode Support  
 **Build Time:** < 5 seconds  
 **Mobile Friendly:** Yes ✓  
 **Dark Mode:** Yes ✓
-
+SSS
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Ruby 3.2+ with Bundler (the lockfile uses Bundler 4)
+
+- Ruby 2.7+ with Bundler
 - Git
 - (Optional) Node.js for npm packages
 
@@ -70,7 +71,7 @@ See [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for detailed breakdown.
 ## 📚 Documentation
 
 | Document | Purpose |
-|----------|---------|
+| ---------- | --------- |
 | [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) | Folder organization and conventions |
 | [DEVELOPMENT.md](docs/DEVELOPMENT.md) | How to create content and customize |
 | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design and technical details |
@@ -105,6 +106,7 @@ Structured data, sitemap, og:tags
 ## 🛠️ Common Tasks
 
 ### Add a Blog Post
+
 ```bash
 # Create: source/posts/2026-04-16-post-title.md
 ---
@@ -119,6 +121,7 @@ Your post content...
 ```
 
 ### Add a Project
+
 ```bash
 # Create: source/projects/project-name.md
 ---
@@ -132,7 +135,9 @@ Project details...
 ```
 
 ### Customize Colors
+
 Edit `assets/css/modern-professional.css`:
+
 ```css
 :root {
   --primary: #0f766e;              /* Main color */
@@ -142,7 +147,9 @@ Edit `assets/css/modern-professional.css`:
 ```
 
 ### Update Navigation
+
 Edit `source/_data/navigation.yml`:
+
 ```yaml
 main:
   - title: "Home"
@@ -156,12 +163,14 @@ main:
 ## 🚢 Deployment
 
 ### GitHub Pages (Automatic)
+
 1. Commit changes to main branch
 2. Push to GitHub
 3. Wait 1-2 minutes for build
 4. Site updates automatically
 
 ### Manual Deployment
+
 1. Build locally: `scripts\build.bat`
 2. Deploy `_site/` contents to your web server
 
@@ -170,16 +179,19 @@ main:
 ## 🔧 Build System
 
 **Development:**
+
 ```bash
 scripts\dev.bat      # Starts at localhost:4000
 ```
 
 **Production:**
+
 ```bash
 scripts\build.bat    # Optimized build
 ```
 
 **Features:**
+
 - Automatic dependency installation
 - Build error detection
 - Live reload in dev mode
@@ -214,6 +226,7 @@ scripts\build.bat    # Optimized build
 ## ⚙️ Configuration
 
 Main configuration in `config/_config.yml`:
+
 - Site title, description, URL
 - Collection settings and permalinks
 - Plugin configuration
@@ -226,7 +239,7 @@ Customize in `_config.yml` or `source/_data/` files.
 ## 🐛 Troubleshooting
 
 | Issue | Solution |
-|-------|----------|
+| ------- | ---------- |
 | Styles not showing | Clear browser cache (Ctrl+Shift+R) |
 | Content not appearing | Check `source/_data/navigation.yml` and front matter |
 | Build fails | Run `bundle install` to install dependencies |

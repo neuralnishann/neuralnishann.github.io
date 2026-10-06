@@ -29,7 +29,10 @@ redirect_from:
             {{ post.excerpt | markdownify | strip_html | truncatewords: 30 }}
           </div>
         {% endif %}
-        <a href="{{ post.url }}" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Learn More →</a>
+        {% assign achievement_link = post.redirect_to | default: post.url %}
+        <a href="{% if achievement_link contains '://' %}{{ achievement_link }}{% else %}{{ achievement_link | relative_url }}{% endif %}" class="btn btn-primary btn-sm" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">
+          {% if post.redirect_to %}Open verification{% else %}View achievement{% endif %} →
+        </a>
       </div>
     {% endfor %}
   </div>

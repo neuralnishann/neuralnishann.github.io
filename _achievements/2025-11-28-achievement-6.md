@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Microsoft AI Skill Fest(2025) | Microsoft Cloud Skills Challenge(2024) | Microsoft Learn AI Skills Challenge(2023)"
 collection: achievements
 type: "Completed 370+ online Self?Paced learning paths, Instructor-Led trainings, Microsoft Expert-Led trainings. Pioneered 17 Microsoft Certifications. Microsoft Learn Modules: 1660+, Training Time: 1325+ Hours and Passed Azure | SC-100 | AZ-500 | AZ-400 | AZ-305 | AZ-204 | AZ-104 | DP-700 | DP-600 | DP-420 | DP-300 | DP-203 | DP-100 | AI-102 | PL-300 | AI-900 | MS-900|"

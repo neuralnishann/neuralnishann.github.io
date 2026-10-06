@@ -48,22 +48,22 @@ redirect_from:
 
 | Code | Certification | Verification | Certificate | Date Obtained | Expiration |
 |------|---------------|--------------|-------------|---------------|------------|
-| AB-100 | Microsoft Certified: Agentic AI Business Solutions Architect | [Verify](/credential-access/ab-100-verify/) | [View](/credential-access/ab-100-view/) | 2026-01-08 | 2027-01-08 |
+| AB-100 | Microsoft Certified: Agentic AI Business Solutions Architect | [Verify](/credential-access/ab-100-verify/) | [View](/credential-access/ab-100-view/) | 2026-01-08 | 2028-01-08 |
 | MS-900 | Microsoft 365 Certified: Fundamentals | [Verify](/credential-access/ms-900-verify/) | [View](/credential-access/ms-900-view/) | 2025-10-17 | No Expiration |
-| PL-300 | Microsoft Certified: Power BI Data Analyst Associate | [Verify](/credential-access/pl-300-verify/) | [View](/credential-access/pl-300-view/) | 2025-10-13 | 2026-10-14 |
-| SC-100 | Microsoft Certified: Cybersecurity Architect Expert | [Verify](/credential-access/sc-100-verify/) | [View](/credential-access/sc-100-view/) | 2025-10-12 | 2026-10-13 |
-| DP-600 | Microsoft Certified: Fabric Analytics Engineer Associate | [Verify](/credential-access/dp-600-verify/) | [View](/credential-access/dp-600-view/) | 2025-10-11 | 2026-10-12 |
-| AZ-500 | Microsoft Certified: Azure Security Engineer Associate | [Verify](/credential-access/az-500-verify/) | [View](/credential-access/az-500-view/) | 2025-10-10 | 2026-10-11 |
-| DP-300 | Microsoft Certified: Azure Database Administrator Associate | [Verify](/credential-access/dp-300-verify/) | [View](/credential-access/dp-300-view/) | 2025-10-09 | 2026-10-10 |
-| AZ-400 | Microsoft Certified: Azure DevOps Engineer Expert | [Verify](/credential-access/az-400-verify/) | [View](/credential-access/az-400-view/) | 2025-10-08 | 2026-10-09 |
-| DP-420 | Microsoft Certified: Azure Cosmos DB Developer Specialty | [Verify](/credential-access/dp-420-verify/) | [View](/credential-access/dp-420-view/) | 2025-10-07 | 2026-10-08 |
-| AZ-204 | Microsoft Certified: Azure Developer Associate | [Verify](/credential-access/az-204-verify/) | [View](/credential-access/az-204-view/) | 2025-10-07 | 2026-10-07 |
-| AZ-305 | Microsoft Certified: Azure Solutions Architect Expert | [Verify](/credential-access/az-305-verify/) | [View](/credential-access/az-305-view/) | 2025-10-05 | 2026-10-06 |
-| AZ-104 | Microsoft Certified: Azure Administrator Associate | [Verify](/credential-access/az-104-verify/) | [View](/credential-access/az-104-view/) | 2025-10-04 | 2026-10-05 |
-| DP-700 | Microsoft Certified: Fabric Data Engineer Associate | [Verify](/credential-access/dp-700-verify/) | [View](/credential-access/dp-700-view/) | 2025-06-24 | 2027-06-25 |
-| DP-203 | Microsoft Certified: Azure Data Engineer Associate | [Verify](/credential-access/dp-203-verify/) | [View](/credential-access/dp-203-view/) | 2024-11-28 | 2025-11-28 |
-| AI-102 | Microsoft Certified: Azure AI Engineer Associate | [Verify](/credential-access/ai-102-verify/) | [View](/credential-access/ai-102-view/) | 2024-04-30 | 2027-04-30 |
-| DP-100 | Microsoft Certified: Azure Data Scientist Associate | [Verify](/credential-access/dp-100-verify/) | [View](/credential-access/dp-100-view/) | 2024-04-28 | 2027-04-28 |
+| PL-300 | Microsoft Certified: Power BI Data Analyst Associate | [Verify](/credential-access/pl-300-verify/) | [View](/credential-access/pl-300-view/) | 2025-10-13 | 2027-10-14 |
+| SC-100 | Microsoft Certified: Cybersecurity Architect Expert | [Verify](/credential-access/sc-100-verify/) | [View](/credential-access/sc-100-view/) | 2025-10-12 | 2027-10-13 |
+| DP-600 | Microsoft Certified: Fabric Analytics Engineer Associate | [Verify](/credential-access/dp-600-verify/) | [View](/credential-access/dp-600-view/) | 2025-10-11 | 2027-10-12 |
+| AZ-500 | Microsoft Certified: Azure Security Engineer Associate | [Verify](/credential-access/az-500-verify/) | [View](/credential-access/az-500-view/) | 2025-10-10 | 2027-10-11 |
+| DP-300 | Microsoft Certified: Azure Database Administrator Associate | [Verify](/credential-access/dp-300-verify/) | [View](/credential-access/dp-300-view/) | 2025-10-09 | 2027-10-10 |
+| AZ-400 | Microsoft Certified: Azure DevOps Engineer Expert | [Verify](/credential-access/az-400-verify/) | [View](/credential-access/az-400-view/) | 2025-10-08 | 2027-10-09 |
+| DP-420 | Microsoft Certified: Azure Cosmos DB Developer Specialty | [Verify](/credential-access/dp-420-verify/) | [View](/credential-access/dp-420-view/) | 2025-10-07 | 2027-10-08 |
+| AZ-204 | Microsoft Certified: Azure Developer Associate | [Verify](/credential-access/az-204-verify/) | [View](/credential-access/az-204-view/) | 2025-10-07 | 2027-10-07 |
+| AZ-305 | Microsoft Certified: Azure Solutions Architect Expert | [Verify](/credential-access/az-305-verify/) | [View](/credential-access/az-305-view/) | 2025-10-05 | 2027-10-06 |
+| AZ-104 | Microsoft Certified: Azure Administrator Associate | [Verify](/credential-access/az-104-verify/) | [View](/credential-access/az-104-view/) | 2025-10-04 | 2027-10-05 |
+| DP-700 | Microsoft Certified: Fabric Data Engineer Associate | [Verify](/credential-access/dp-700-verify/) | [View](/credential-access/dp-700-view/) | 2025-06-24 | 2028-06-25 |
+| DP-203 | Microsoft Certified: Azure Data Engineer Associate | [Verify](/credential-access/dp-203-verify/) | [View](/credential-access/dp-203-view/) | 2024-11-28 | 2026-11-28 |
+| AI-102 | Microsoft Certified: Azure AI Engineer Associate | [Verify](/credential-access/ai-102-verify/) | [View](/credential-access/ai-102-view/) | 2024-04-30 | 2028-04-30 |
+| DP-100 | Microsoft Certified: Azure Data Scientist Associate | [Verify](/credential-access/dp-100-verify/) | [View](/credential-access/dp-100-view/) | 2024-04-28 | 2028-04-28 |
 | AI-900 | Microsoft Certified: Azure AI Fundamentals | [Verify](/credential-access/ai-900-verify/) | [View](/credential-access/ai-900-view/) | 2023-08-08 | No Expiration |
 
 
@@ -72,7 +72,7 @@ redirect_from:
 | Code | Certification | Verification | Certificate | Date Obtained | Expiration |
 |------|---------------|--------------|-------------|---------------|------------|
 | AFS-201 | Salesforce Agentforce Specialist | [Verify](/credential-access/afs-201-verify/) | [View](/credential-access/afs-201-view/) | 2025-06-21 | No Expiration |
-| N/A | Salesforce AI Associate | [Verify](/credential-access/afs-201-verify/) | [View](/credential-access/n-a-view/) | 2024-11-28 | No Expiration |
+| N/A | Salesforce AI Associate | — | [View](/credential-access/n-a-view/) | 2024-11-28 | No Expiration |
 
 ### Astronomer Certifications
 
@@ -405,9 +405,7 @@ redirect_from:
 - Data for AI, Data Management  
 - Business and Productivity Tools and Salesforce Customer 360  
 
-> Salesforce AI Certification Verification Link: [link](/credential-access/afs-201-verify/).
-
-
+> Salesforce AI Associate certificate: [View certificate](/credential-access/n-a-view/).
 
 
 

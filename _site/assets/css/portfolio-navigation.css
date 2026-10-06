@@ -1,0 +1,169 @@
+/* Portfolio header: clear identity, compact links, visible résumé action. */
+.masthead {
+  border-bottom: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.045) !important;
+}
+
+.masthead__inner-wrap {
+  max-width: 1320px !important;
+  padding: 0.45rem clamp(1rem, 3vw, 2rem) !important;
+}
+
+.masthead .greedy-nav {
+  min-height: 68px !important;
+  justify-content: flex-start !important;
+  background: transparent !important;
+}
+
+.masthead .greedy-nav .visible-links {
+  min-width: 0;
+  margin: 0 !important;
+  padding-right: 58px !important;
+  gap: 0.18rem;
+}
+
+.masthead .greedy-nav .visible-links > li:first-child {
+  margin-right: clamp(0.8rem, 2.5vw, 2rem);
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__brand {
+  display: inline-flex !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 42px !important;
+  gap: 0.55rem;
+  padding: 0 0.4rem !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--text) !important;
+  text-decoration: none !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link {
+  display: inline-flex !important;
+  min-height: 40px !important;
+  align-items: center !important;
+  padding: 0.55rem 0.75rem !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  font-size: 0.9rem !important;
+  font-weight: 650 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:hover,
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:focus-visible {
+  border-color: var(--border) !important;
+  background: var(--card) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link[aria-current="page"] {
+  color: var(--primary) !important;
+  font-weight: 750 !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__cv {
+  margin-left: 0.35rem;
+  padding-inline: 1rem !important;
+  border-color: var(--primary) !important;
+  background: var(--primary) !important;
+  color: #fff !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__cv:hover,
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__cv:focus-visible {
+  border-color: var(--primary-dark, #134e4a) !important;
+  background: var(--primary-dark, #134e4a) !important;
+  color: #fff !important;
+}
+
+.masthead .greedy-nav > button {
+  right: 0.25rem !important;
+  width: 40px !important;
+  height: 40px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 9px !important;
+  background: var(--card) !important;
+  box-shadow: none !important;
+}
+
+.masthead .greedy-nav > button:hover,
+.masthead .greedy-nav > button:focus-visible {
+  border-color: var(--primary) !important;
+  background: var(--card) !important;
+  box-shadow: none !important;
+  transform: translateY(-1px);
+}
+
+.masthead .greedy-nav .hidden-links {
+  top: calc(100% - 0.2rem);
+  right: 0.25rem;
+  min-width: 200px;
+  padding: 0.45rem;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  background: var(--card) !important;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.14) !important;
+}
+
+.masthead .greedy-nav .hidden-links > li > a {
+  display: block;
+  padding: 0.65rem 0.75rem;
+  border-radius: 7px;
+  color: var(--text) !important;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+.masthead .greedy-nav .hidden-links > li > a:hover,
+.masthead .greedy-nav .hidden-links > li > a[aria-current="page"] {
+  background: var(--bg) !important;
+  color: var(--primary) !important;
+}
+
+/* Give every navigation destination the same clear action treatment as CV. */
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link,
+.masthead .greedy-nav .hidden-links > li > a {
+  border: 1px solid var(--primary) !important;
+  background: var(--primary) !important;
+  color: #fff !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:hover,
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:focus-visible,
+.masthead .greedy-nav .hidden-links > li > a:hover,
+.masthead .greedy-nav .hidden-links > li > a:focus-visible {
+  border-color: var(--primary-dark, #134e4a) !important;
+  background: var(--primary-dark, #134e4a) !important;
+  color: #fff !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link[aria-current="page"],
+.masthead .greedy-nav .hidden-links > li > a[aria-current="page"] {
+  border-color: var(--primary-dark, #134e4a) !important;
+  background: var(--primary-dark, #134e4a) !important;
+  color: #fff !important;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.24) !important;
+}
+
+@media (max-width: 640px) {
+  .masthead__inner-wrap { padding-inline: 0.75rem !important; }
+  .masthead .greedy-nav { min-height: 60px !important; }
+  .masthead .greedy-nav .visible-links { padding-right: 48px !important; }
+  .masthead .greedy-nav .visible-links > li:first-child { margin-right: 0.55rem; }
+  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link { min-height: 38px !important; padding-inline: 0.62rem !important; font-size: 0.86rem !important; }
+  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__brand { height: 38px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link { transition: none !important; }
+}

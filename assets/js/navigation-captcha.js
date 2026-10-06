@@ -63,6 +63,28 @@
     return /\/credential-access\//.test(pathname || '');
   }
 
+  function isProtectedFile(target, resolvedUrl) {
+    if (!resolvedUrl || resolvedUrl.origin !== window.location.origin) {
+      return false;
+    }
+
+    if (isProtectedAccessPath(resolvedUrl.pathname)) {
+      return false;
+    }
+
+    // Site files and images should use the access check. Ordinary page links
+    // stay navigable without a challenge.
+    if (/\/files\//i.test(resolvedUrl.pathname)) {
+      return true;
+    }
+
+    if (target && target.hasAttribute && target.hasAttribute('download')) {
+      return true;
+    }
+
+    return /\.(?:avif|bmp|csv|docx?|gif|jpe?g|json|mp3|mp4|odp|ods|odt|pdf|png|pptx?|svg|tiff?|txt|wav|webm|webp|xlsx?|zip|7z|rar)$/i.test(resolvedUrl.pathname);
+  }
+
   function isDownloadLink(target, resolvedUrl) {
     var text = normalizeInput((target.textContent || '').replace(/\s+/g, ' '));
     if (target.hasAttribute('download')) {
@@ -91,9 +113,9 @@
     overlay.setAttribute('aria-hidden', 'true');
     overlay.innerHTML = '' +
       '<div class="nav-captcha__dialog" role="dialog" aria-modal="true" aria-labelledby="nav-captcha-title">' +
-      '<div class="nav-captcha__eyebrow">Navigation Check</div>' +
-      '<h2 id="nav-captcha-title" class="nav-captcha__title">Confirm before redirect</h2>' +
-      '<p class="nav-captcha__text">Enter the captcha code shown below to continue to the next page.</p>' +
+      '<div class="nav-captcha__eyebrow">Protected Resource</div>' +
+      '<h2 id="nav-captcha-title" class="nav-captcha__title">Confirm file access</h2>' +
+      '<p class="nav-captcha__text">Complete this check to open the file or image.</p>' +
       '<div id="nav-captcha-code" class="nav-captcha__code">------</div>' +
       '<label class="nav-captcha__label" for="nav-captcha-input">Captcha code</label>' +
       '<input id="nav-captcha-input" class="nav-captcha__input" type="text" inputmode="text" autocomplete="off" spellcheck="false" maxlength="6" placeholder="Type 6 characters">' +
@@ -261,10 +283,10 @@
         }
 
         var resolved = new URL(href, window.location.href);
-        if (isProtectedAccessPath(resolved.pathname)) {
+        if (resolved.hash && resolved.pathname === window.location.pathname && resolved.search === window.location.search) {
           return null;
         }
-        if (resolved.hash && resolved.pathname === window.location.pathname && resolved.search === window.location.search) {
+        if (!isProtectedFile(target, resolved)) {
           return null;
         }
 
@@ -281,8 +303,13 @@
           return null;
         }
 
+        var resolvedButtonUrl = new URL(buttonHref, window.location.href);
+        if (!isProtectedFile(target, resolvedButtonUrl)) {
+          return null;
+        }
+
         return {
-          url: new URL(buttonHref, window.location.href).toString(),
+          url: resolvedButtonUrl.toString(),
           target: target.getAttribute('formtarget') || '_self',
           download: ''
         };
