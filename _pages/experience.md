@@ -15,4 +15,5 @@ redirect_from:
 
 ### Microsoft PowerUP Champs Program, Microsoft - Volunteer
 - **Location:** Virtual
-- **Duration:** Jan 2025 - Present
+- **Duration:** Jan 2025 - June 2026
+S
