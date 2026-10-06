@@ -1,0 +1,355 @@
+/* ==========================================
+   Layout Fixes & Visual Improvements
+   - Landing Page Heading Styles
+   - Navigation Improvements
+   - Professional Styling
+   ========================================== */
+
+/* NOTE: Social media button styles consolidated in sidebar-modern.css
+   to avoid CSS cascade conflicts and duplicate rendering */
+
+/* Main h2 headings - improved rendering */
+h2 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  line-height: 1.2;
+  word-break: break-word;
+  position: relative;
+}
+
+/* Gradient text effect - fallback for better support */
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
+}
+
+/* Professional Focus heading - enhanced styling */
+h2:nth-of-type(1),
+h2:nth-of-type(2),
+h2:nth-of-type(3) {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/* Light mode h2 styling */
+html.light h2 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2:first-of-type {
+  margin-top: 2rem;
+}
+
+/* h3 subheadings */
+h3 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+/* h4 headings in sections */
+h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+/* Emphasis on specific sections */
+.intro-text strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+html.dark .intro-text strong {
+  color: var(--primary-light);
+}
+
+/* ========================================
+   3. NAVIGATION IMPROVEMENTS
+   ======================================== */
+
+/* Greedy navigation - overall improvements */
+.greedy-nav {
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 100;
+}
+
+/* Visible navigation links */
+.greedy-nav .visible-links a {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin: 0 0.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  position: relative;
+  color: var(--text);
+}
+
+.greedy-nav .visible-links a:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  color: var(--primary);
+}
+
+/* Underline animation for nav */
+.greedy-nav .visible-links a:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  width: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.greedy-nav .visible-links a:hover:before {
+  width: 70%;
+  transform: translateX(-50%);
+}
+
+/* Hidden dropdown menu */
+.greedy-nav .hidden-links {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: top right;
+  padding: 0.5rem;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.greedy-nav .hidden-links a {
+  border-radius: 6px;
+  margin: 0.25rem 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  transform: translateX(4px);
+  box-shadow: inset -2px 0 0 var(--primary);
+  color: var(--primary);
+}
+
+/* Menu toggle button */
+.greedy-nav button {
+  border-radius: 8px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  margin-right: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  font-weight: 700;
+}
+
+.greedy-nav button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Dark mode navigation */
+html.dark .greedy-nav {
+  background: rgba(30, 30, 30, 0.8);
+  border-bottom: 1px solid rgba(100, 180, 255, 0.2);
+}
+
+html.dark .greedy-nav .visible-links a {
+  color: #e8f4f8;
+}
+
+html.dark .greedy-nav .visible-links a:hover {
+  background: rgba(100, 180, 255, 0.15);
+  color: #00d4ff;
+}
+
+html.dark .greedy-nav .hidden-links {
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(100, 180, 255, 0.2);
+}
+
+html.dark .greedy-nav .hidden-links a {
+  color: #e8f4f8;
+}
+
+html.dark .greedy-nav .hidden-links a:hover {
+  background: rgba(100, 180, 255, 0.1);
+  color: #00d4ff;
+}
+
+/* ========================================
+   4. PROFESSIONAL STYLING ENHANCEMENTS
+   ======================================== */
+
+/* Card styling improvements */
+.card,
+[class*='card'] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+[class*='card']:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--primary);
+}
+
+/* Button styling */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5568d3, #6a3d93);
+}
+
+/* ========================================
+   5. RESPONSIVE FIXES
+   ======================================== */
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .greedy-nav {
+    padding: 0.5rem;
+  }
+
+  .greedy-nav .visible-links a {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .author__urls a {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+
+  .greedy-nav .visible-links a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    margin: 0 0.1rem;
+  }
+}
+
+/* ========================================
+   6. ACCESSIBILITY & PERFORMANCE
+   ======================================== */
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  h2, h3, h4 {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+  }
+
+  .author__urls a {
+    border-width: 2px;
+  }
+
+  .greedy-nav .visible-links a {
+    border: 2px solid transparent;
+  }
+}

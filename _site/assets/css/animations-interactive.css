@@ -1,0 +1,429 @@
+/* Advanced Animations & Interactive Effects
+   Professional Data Scientist Portfolio
+*/
+
+/* Entrance Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Page Load Animation */
+.page {
+  animation: slideInUp 0.5s ease-out;
+}
+
+.page__title {
+  animation: slideInDown 0.6s ease-out;
+}
+
+.sidebar {
+  animation: slideInRight 0.6s ease-out;
+}
+
+/* Card Hover Effects */
+.card {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(99, 102, 241, 0.1));
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+}
+
+/* Button Hover Effects */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-primary {
+  box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+}
+
+/* Text Selection */
+::selection {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+html.dark ::selection {
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+  color: var(--dark-bg);
+}
+
+/* Smooth Transitions for Links */
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+}
+
+/* Navigation Link Animation */
+.masthead {
+  animation: slideInDown 0.5s ease-out;
+  backdrop-filter: blur(10px);
+}
+
+.greedy-nav .visible-links a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.greey-nav .visible-links a:hover {
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+/* Hero Section Animation */
+.modern-hero__content {
+  animation: fadeInScale 0.7s ease-out;
+}
+
+.modern-hero__text h1 {
+  animation: slideInLeft 0.6s ease-out 0.1s both;
+}
+
+.modern-hero__subtitle {
+  animation: slideInLeft 0.6s ease-out 0.2s both;
+}
+
+.modern-hero__ctas {
+  animation: slideInLeft 0.6s ease-out 0.3s both;
+}
+
+.stat-card {
+  animation: fadeInScale 0.6s ease-out;
+}
+
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Skill Tags Animation */
+.skill-tag {
+  animation: fadeInScale 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: visible;
+}
+
+.skill-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: 20px;
+}
+
+.skill-tag:hover::before {
+  left: 100%;
+}
+
+.skill-tag:hover {
+  transform: scale(1.12) translateY(-6px) translateZ(0);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.skill-category-box {
+  animation: fadeInScale 0.6s ease-out;
+}
+
+.skill-category-box:nth-child(1) { animation-delay: 0.05s; }
+.skill-category-box:nth-child(2) { animation-delay: 0.1s; }
+.skill-category-box:nth-child(3) { animation-delay: 0.15s; }
+.skill-category-box:nth-child(4) { animation-delay: 0.2s; }
+.skill-category-box:nth-child(5) { animation-delay: 0.25s; }
+.skill-category-box:nth-child(6) { animation-delay: 0.3s; }
+.skill-category-box:nth-child(7) { animation-delay: 0.35s; }
+
+/* Achievement/Project Card Animation */
+.achievement-card,
+.project-card {
+  animation: fadeInScale 0.5s ease-out;
+}
+
+.achievement-card:nth-child(1),
+.project-card:nth-child(1) { animation-delay: 0.05s; }
+.achievement-card:nth-child(2),
+.project-card:nth-child(2) { animation-delay: 0.1s; }
+.achievement-card:nth-child(3),
+.project-card:nth-child(3) { animation-delay: 0.15s; }
+.achievement-card:nth-child(n+4),
+.project-card:nth-child(n+4) { animation-delay: 0.2s; }
+
+/* Publication Card Animation */
+.publication-card {
+  animation: slideInUp 0.5s ease-out;
+}
+
+/* Table Row Animation */
+tbody tr {
+  animation: slideInUp 0.5s ease-out;
+}
+
+tbody tr:nth-child(1) { animation-delay: 0.05s; }
+tbody tr:nth-child(2) { animation-delay: 0.1s; }
+tbody tr:nth-child(3) { animation-delay: 0.15s; }
+tbody tr:nth-child(n+4) { animation-delay: 0.2s; }
+
+/* Loading Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
+}
+
+/* Focus Ring Animation */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  animation: focusRing 0.3s ease;
+}
+
+@keyframes focusRing {
+  from {
+    outline-offset: 0px;
+  }
+  to {
+    outline-offset: 2px;
+  }
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tooltip Animation */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--primary) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Dark Mode Animations */
+html.dark .card {
+  background: linear-gradient(135deg, var(--dark-card) 0%, rgba(30, 41, 59, 0.8) 100%);
+}
+
+html.dark .card:hover {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(30, 41, 59, 0.8) 100%);
+}
+
+/* Staggered List Animation */
+.entry-item {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.entry-item:nth-child(1) { animation-delay: 0.05s; }
+.entry-item:nth-child(2) { animation-delay: 0.1s; }
+.entry-item:nth-child(3) { animation-delay: 0.15s; }
+.entry-item:nth-child(n+4) { animation-delay: 0.2s; }
+
+/* Form Element Animations */
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1), 0 0 0 5px rgba(20, 184, 166, 0.05);
+  animation: focusExpand 0.3s ease;
+}
+
+@keyframes focusExpand {
+  from {
+    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.1);
+  }
+  to {
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1), 0 0 0 5px rgba(20, 184, 166, 0.05);
+  }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  .card {
+    animation: slideInUp 0.4s ease-out;
+  }
+
+  .stat-card,
+  .skill-category-box,
+  .achievement-card,
+  .project-card {
+    animation: slideInUp 0.4s ease-out;
+  }
+}

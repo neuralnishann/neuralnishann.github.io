@@ -1,10 +1,6 @@
 <div class="intro-section">
   <p class="intro-text">
-<<<<<<< HEAD
-    Hi there! It's <strong> Nishan</strong>, an <strong>Azure Cloud Solutions Architect,</strong> passionate about building practical, production-ready solutions across data engineering, machine learning, and cloud platforms.ss
-=======
-    Hi there! It's<strong>Nishan</strong>, an <strong>Azure Cloud Solutions Architect</strong> passionate about building practical, production-ready solutions across data engineering, machine learning, and cloud platforms.
->>>>>>> 05d822800baed5f463fb446062709a16558a0b4e
+    Hi there! It's <strong> Nishan</strong>, an <strong>Azure Cloud Solutions Architect,</strong> passionate about building practical, production-ready solutions across data engineering, machine learning, and cloud platforms.
   </p>
   
   <p class="intro-text">

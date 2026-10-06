@@ -1,0 +1,30 @@
+html.content-protected body,
+html.content-protected .page,
+html.content-protected .archive,
+html.content-protected .page__content,
+html.content-protected .archive__item,
+html.content-protected .author__content,
+html.content-protected .breadcrumbs,
+html.content-protected .masthead {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html.content-protected input,
+html.content-protected textarea,
+html.content-protected [contenteditable="true"],
+html.content-protected [role="textbox"],
+html.content-protected [role="searchbox"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+html.content-protected img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}

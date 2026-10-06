@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-10-06T23:58:30+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SMG Arafat N.</title><author><name>SMG Arafat N.</name><email>neuralnishan@protonmail.com</email><uri>https://neuralnishan.pro</uri></author><entry><title type="html">Azure Hands-On Labs: AZ-104 - Walkthrough Playlist</title><link href="http://localhost:4000/posts/2025/12/11/azure-az104-hands-on-labs" rel="alternate" type="text/html" title="Azure Hands-On Labs: AZ-104 - Walkthrough Playlist" /><published>2025-12-11T01:00:00+01:00</published><updated>2025-12-11T01:00:00+01:00</updated><id>http://localhost:4000/posts/2025/12/11/azure-az104-hands-on-labs</id><content type="html" xml:base="http://localhost:4000/posts/2025/12/11/azure-az104-hands-on-labs"><![CDATA[<p>I built this page to document how I prepared for AZ-104 through practical lab execution.</p>
+
+<p>Playlist: https://www.youtube.com/playlist?list=PL9HBlbKg4DavosJmnJ8UTk4dHxeQbY-3V</p>
+
+<h2 id="what-i-cover-in-these-labs">What I cover in these labs</h2>
+
+<ul>
+  <li>Virtual networking and intersite connectivity</li>
+  <li>Network traffic management patterns</li>
+  <li>Azure Storage administration tasks</li>
+  <li>Azure Virtual Machines administration tasks</li>
+</ul>
+
+<h2 id="my-implementation-workflow">My implementation workflow</h2>
+
+<p>This is the repeatable flow I used across the labs:</p>
+
+<ul>
+  <li>Created isolated resource groups for each scenario</li>
+  <li>Built VNets, subnets, and NSG rules</li>
+  <li>Tested connectivity, routing, and security behavior</li>
+  <li>Configured VNet peering for cross-network communication</li>
+  <li>Deployed and validated load-balancing components</li>
+  <li>Managed storage accounts, blobs, and access tiers</li>
+  <li>Provisioned and administered Windows and Linux VMs</li>
+  <li>Attached disks and validated persistence after changes</li>
+</ul>
+
+<h2 id="embedded-lab-walkthroughs">Embedded lab walkthroughs</h2>
+
+<h3 id="lab-5---implement-virtual-networking">Lab 5 - Implement Virtual Networking</h3>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/DwN8m58mZ58" title="Lab 5: Implement Virtual Networking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Focus: VNet design, subnetting, NSGs, and connectivity validation.</p>
+
+<h3 id="lab-6---implement-intersite-connectivity">Lab 6 - Implement Intersite Connectivity</h3>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/XD0TMnV2-Yc" title="Lab 6: Implement Intersite Connectivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Focus: VNet peering, routing behavior, and cross-network validation.</p>
+
+<h3 id="lab-7---implement-network-traffic-management">Lab 7 - Implement Network Traffic Management</h3>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/9KFuwwX7Y3g" title="Lab 7: Implement Network Traffic Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Focus: load balancing concepts, backend pools, probes, and traffic validation.</p>
+
+<h3 id="lab-8---manage-azure-storage">Lab 8 - Manage Azure Storage</h3>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/1cp5iQddNps" title="Lab 8: Manage Azure Storage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Focus: storage accounts, blob operations, access tiers, and recovery checks.</p>
+
+<h3 id="lab-9---manage-virtual-machines">Lab 9 - Manage Virtual Machines</h3>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/inQikpCcrSs" title="Lab 9: Manage Virtual Machines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Focus: VM deployment, disk operations, and admin workflow via Portal and CLI.</p>
+
+<h2 id="lab-discipline-note">Lab discipline note</h2>
+
+<p>I recommend using a dedicated lab subscription or resource group and cleaning up resources after each session to control cost.</p>]]></content><author><name>SMG Arafat N.</name><email>neuralnishan@protonmail.com</email><uri>https://neuralnishan.pro</uri></author><category term="azure" /><category term="az104" /><category term="hands-on" /><category term="tutorial" /><category term="youtube" /><summary type="html"><![CDATA[My AZ-104 hands-on lab playlist with direct embeds and the exact implementation workflow I used.]]></summary></entry></feed>

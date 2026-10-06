@@ -1,0 +1,397 @@
+/* Floating dark mode toggle and expanded dark theme overrides */
+
+/* CSS Custom Properties */
+:root {
+  --color-primary: #d4d4d8;
+  --color-secondary: #a1a1aa;
+  --color-accent: #71717a;
+  --color-light: #f4f4f5;
+  --color-danger: #f87171;
+  --color-text-light: #e4e4e7;
+}
+
+/* Floating button centered vertically on right */
+.theme-toggle-float {
+  position: fixed !important;
+  right: 22px !important;
+  top: 50% !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: translateY(-50%) !important;
+  z-index: 9999 !important;
+  /* modern pill button */
+  min-height: 52px !important;
+  min-width: 140px !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  background: #f3f4f6 !important;
+  color: #111111 !important;
+  border: 2px solid var(--color-primary) !important;
+  box-shadow: 0 10px 30px rgba(16,20,30,0.12), 0 2px 6px rgba(102,126,234,0.04) !important;
+  backdrop-filter: blur(6px) saturate(120%);
+  cursor: pointer !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-size: 17px !important;
+  line-height: 1 !important;
+  transition: background .18s ease, color .18s ease, transform .14s cubic-bezier(0.2,0.9,0.2,1), box-shadow .18s ease, border-color .18s ease;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  overflow: visible !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+.theme-toggle-float:active { transform: translateY(-50%) scale(0.995); }
+.theme-toggle-float:hover { transform: translateY(-50%) translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(16,20,30,0.16), 0 4px 12px rgba(102,126,234,0.06); }
+
+/* Icon + label inside the toggle */
+.theme-toggle-float .toggle-icon {
+  display: inline-flex !important;
+  width: 20px;
+  height: 20px;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.theme-toggle-float .toggle-label {
+  display: inline-block !important;
+  font-weight: 600;
+  margin-left: 8px;
+  font-size: 14px;
+  color: inherit;
+  text-transform: none;
+  white-space: nowrap;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* make hover accent in light mode to match aesthetic */
+.theme-toggle-float:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 18px 40px rgba(16,20,30,0.16), 0 4px 12px rgba(102,126,234,0.06);
+}
+
+/* Screen-reader only helper */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0; padding: 0; margin: -1px;
+}
+
+/* Ensure button is visible on screen (not print) */
+@media screen {
+  body {
+    overflow-y: auto !important;
+    position: relative !important;
+  }
+
+  .theme-toggle-float {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    z-index: 9999 !important;
+  }
+}
+
+/* Small responsive adjustment */
+@media (max-width: 480px) {
+  .theme-toggle-float { right: 12px; top: auto; bottom: 18px; transform: none; min-height: 44px; padding: 10px 12px; font-size: 15px; }
+}
+
+/* Theme transition helper class — applied briefly via JS for smooth change */
+html.theme-transition, html.theme-transition * {
+  transition: background-color .24s ease, color .24s ease, border-color .24s ease;
+}
+
+/* Basic dark theme variables/overrides - uses CSS custom properties */
+html.dark {
+  background: #050505;
+  color: var(--color-text-light);
+  text-shadow: none;
+}
+
+html.dark a { 
+  color: #f4f4f5;
+  text-shadow: none;
+  transition: color 0.2s ease;
+}
+
+html.dark a:hover {
+  color: #d4d4d8;
+}
+
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+  color: #fafafa;
+  text-shadow: none;
+}
+
+html.dark p {
+  color: var(--color-text-light);
+}
+
+html.dark strong, html.dark b {
+  color: #fafafa;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+html.dark em, html.dark i {
+  color: var(--color-text-light);
+}
+
+html.dark .page__footer,
+html.dark header,
+html.dark .masthead,
+html.dark .page__header {
+  background-color: #090909;
+}
+
+/* Content areas */
+html.dark .content, html.dark .page__content, html.dark .post, html.dark article {
+  background: transparent;
+  color: var(--color-text-light);
+}
+
+/* Code blocks and inline code */
+html.dark code, html.dark pre { 
+  background-color: #0d0d0d !important; 
+  color: #f4f4f5 !important;
+  text-shadow: none;
+  border: 1px solid #27272a;
+  opacity: 0.8;
+}
+
+/* Buttons and inputs */
+html.dark button, html.dark .btn, html.dark input[type="button"], html.dark input[type="submit"] {
+  background: #111111; 
+  color: #f4f4f5; 
+  border-color: #2a2a2a;
+  text-shadow: none;
+  transition: all 0.2s ease;
+}
+
+html.dark button:hover, html.dark .btn:hover, html.dark input[type="button"]:hover, html.dark input[type="submit"]:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Navigation */
+html.dark nav, html.dark .nav, html.dark .site-nav, html.dark .nav-list { background: transparent; }
+html.dark .site-nav a, html.dark .nav a { color: var(--color-text-light); transition: color 0.2s ease; }
+html.dark .site-nav a:hover, html.dark .nav a:hover { color: #ffffff; }
+
+/* Sidebar */
+html.dark .sidebar, html.dark aside { background: transparent; color: var(--color-text-light); }
+
+/* Footer */
+html.dark .page__footer, html.dark footer { color: var(--color-text-light); background: #000; }
+
+/* Blockquote */
+html.dark blockquote { 
+  border-left-color: #2f2f2f; 
+  color: var(--color-text-light);
+  text-shadow: none;
+}
+
+/* Tables */
+html.dark table {
+  background: #000 !important;
+  border-collapse: collapse;
+}
+
+html.dark thead {
+  background: #0a0a0a !important;
+}
+
+html.dark thead th {
+  background: #0c0c0c !important;
+  color: #f4f4f5 !important;
+  border: 1px solid #2a2a2a !important;
+  opacity: 0.8;
+  text-shadow: none;
+  font-weight: bold;
+  padding: 12px !important;
+}
+
+html.dark tbody td {
+  color: var(--color-text-light) !important;
+  border: 1px solid #222 !important;
+  opacity: 0.7;
+  padding: 10px !important;
+  background: #080808 !important;
+}
+
+html.dark tbody tr:hover td {
+  background: #111 !important;
+  box-shadow: inset 0 0 0 1px #1f1f1f;
+}
+
+html.dark tbody tr:nth-child(even) td {
+  background: #050505 !important;
+}
+
+html.dark tbody tr:nth-child(even):hover td {
+  background: #111 !important;
+}
+
+html.dark table caption {
+  color: #f4f4f5 !important;
+  text-shadow: none;
+}
+
+html.dark table strong {
+  color: #fafafa !important;
+  text-shadow: none;
+}
+
+html.dark table em {
+  color: #d4d4d8 !important;
+}
+
+/* Lists and list items */
+html.dark ul, html.dark ol {
+  color: var(--color-text-light);
+}
+
+html.dark li {
+  color: var(--color-text-light);
+}
+
+html.dark ul li:before {
+  color: #a1a1aa;
+}
+
+/* Definition lists */
+html.dark dt {
+  color: #fafafa;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+html.dark dd {
+  color: var(--color-text-light);
+}
+
+/* Section headings */
+html.dark .page__content h2,
+html.dark .page__content h3,
+html.dark .page__content h4 {
+  color: #fafafa;
+  text-shadow: none;
+}
+
+/* Experience/CV section specific */
+html.dark .page__content ul li {
+  color: var(--color-text-light);
+  text-shadow: none;
+}
+
+html.dark .page__content ul li strong {
+  color: #fafafa;
+  text-shadow: none;
+}
+
+/* Ensure floating button looks good in dark mode */
+html.dark .theme-toggle-float {
+  background: #111111 !important;
+  color: var(--color-text-light) !important;
+  border: 2px solid #2a2a2a !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+  pointer-events: auto !important;
+  z-index: 9999 !important;
+}
+
+html.dark .theme-toggle-float:hover {
+  box-shadow: 0 18px 44px rgba(0,0,0,0.65) !important;
+  transform: translateY(-50%) translateY(-6px) scale(1.02) !important;
+  border-color: #3a3a3a !important;
+}
+
+/* Tailwind dark overrides — handle bg-, text-, border- utilities */
+html.dark .bg-white,
+html.dark .bg-slate-50,
+html.dark .bg-gray-50,
+html.dark .bg-slate-100,
+html.dark .bg-gray-100 {
+  background-color: #1a1a1a !important;
+}
+
+html.dark .text-slate-600,
+html.dark .text-slate-700,
+html.dark .text-gray-600,
+html.dark .text-gray-700,
+html.dark .text-slate-900,
+html.dark .text-gray-900 {
+  color: #ddd !important;
+}
+
+html.dark .text-slate-400,
+html.dark .text-gray-400 {
+  color: #999 !important;
+}
+
+html.dark .border-slate-200,
+html.dark .border-gray-200,
+html.dark .border-slate-300 {
+  border-color: #333 !important;
+}
+
+html.dark .glass-panel {
+  background: rgba(30, 30, 30, 0.95) !important;
+  border-color: rgba(80, 80, 80, 0.5) !important;
+}
+
+/* Notice boxes and similar containers — fix text visibility in dark mode */
+html.dark .notice,
+html.dark .notice--primary,
+html.dark .notice--info,
+html.dark .notice--warning,
+html.dark .notice--success,
+html.dark .notice--danger {
+  background-color: rgba(12, 12, 12, 0.96) !important;
+  color: var(--color-text-light) !important;
+  border: 1px solid #27272a !important;
+  opacity: 0.9;
+  text-shadow: none;
+}
+
+html.dark .notice h4,
+html.dark .notice--primary h4,
+html.dark .notice--info h4,
+html.dark .notice--warning h4,
+html.dark .notice--success h4,
+html.dark .notice--danger h4 {
+  color: #fafafa !important;
+  text-shadow: none;
+}
+
+html.dark .notice p,
+html.dark .notice--primary p,
+html.dark .notice--info p,
+html.dark .notice--warning p,
+html.dark .notice--success p,
+html.dark .notice--danger p {
+  color: var(--color-text-light) !important;
+}
+
+/* Honor reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle-float { transition: none; }
+  html.theme-transition, html.theme-transition * { transition: none; }
+}

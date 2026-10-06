@@ -13,7 +13,7 @@ A modern, enterprise-grade portfolio website powered by Jekyll and hosted on Git
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Ruby 2.7+ with Bundler
+- Ruby 3.2+ with Bundler (the lockfile uses Bundler 4)
 - Git
 - (Optional) Node.js for npm packages
 

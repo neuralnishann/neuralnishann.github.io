@@ -1,0 +1,274 @@
+.protected-access {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(120, 120, 120, 0.28);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Dark mode overrides */
+html.dark .protected-access {
+  background: rgba(18, 18, 18, 0.92);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
+  color: #e8f4f8;
+}
+
+.protected-access__eyebrow {
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+  color: #666;
+}
+
+/* Dark mode override for eyebrow */
+html.dark .protected-access__eyebrow {
+  color: #aaa;
+}
+
+.protected-access__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  color: #222;
+}
+
+/* Dark mode override for title */
+html.dark .protected-access__title {
+  color: #39ff14;
+}
+
+.protected-access__text {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Dark mode override for text */
+html.dark .protected-access__text {
+  color: #e8f4f8;
+}
+
+.protected-access__rules {
+  margin: 0 0 1.5rem 1.2rem;
+  color: #555;
+}
+
+/* Dark mode override for rules */
+html.dark .protected-access__rules {
+  color: #ccc;
+}
+
+.protected-access__rules li {
+  margin-bottom: 0.45rem;
+}
+
+.protected-access__countdown,
+.protected-access__challenge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 0.9rem;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode overrides for countdown and challenge */
+html.dark .protected-access__countdown,
+html.dark .protected-access__challenge {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.protected-access__countdown-label,
+.protected-access__challenge-label,
+.protected-access__field-label {
+  font-weight: 700;
+}
+
+.protected-access__countdown-value,
+.protected-access__challenge-code {
+  font-family: "Consolas", "Courier New", monospace;
+}
+
+.protected-access__challenge-code {
+  --captcha-skew-a: -4deg;
+  --captcha-skew-b: 3deg;
+  --captcha-rotate: -1deg;
+  --captcha-line-a-top: 28%;
+  --captcha-line-b-top: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.02em;
+  min-height: 4.1rem;
+  padding: 0.4rem 0.7rem;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08), transparent 26%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.02) 0,
+      rgba(255, 255, 255, 0.02) 10px,
+      rgba(0, 0, 0, 0.03) 10px,
+      rgba(0, 0, 0, 0.03) 20px
+    );
+  letter-spacing: 0.08em;
+  transform: rotate(var(--captcha-rotate));
+  user-select: none;
+}
+
+.protected-access__challenge-code::before,
+.protected-access__challenge-code::after {
+  content: "";
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  height: 2px;
+  opacity: 0.46;
+  pointer-events: none;
+}
+
+.protected-access__challenge-code::before {
+  top: var(--captcha-line-a-top);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(var(--captcha-skew-a));
+}
+
+.protected-access__challenge-code::after {
+  top: var(--captcha-line-b-top);
+  background: linear-gradient(90deg, transparent, rgba(128, 255, 185, 0.4), transparent);
+  transform: rotate(var(--captcha-skew-b));
+}
+
+.protected-access__glyph {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.18);
+}
+
+.protected-access__field {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.protected-access__input {
+  width: 100%;
+  margin-top: 0.45rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(120, 120, 120, 0.34);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Dark mode override for input */
+html.dark .protected-access__input {
+  background: rgba(0, 0, 0, 0.24);
+  color: inherit;
+}
+
+.protected-access__checkbox {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.protected-access__checkbox input {
+  margin-top: 0.2rem;
+}
+
+.protected-access__honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.protected-access__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.protected-access__button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.protected-access__status {
+  min-height: 1.4rem;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.protected-access__status.is-error {
+  color: #ff7a7a;
+}
+
+.protected-access__status.is-success {
+  color: #72ff8f;
+}
+
+.protected-preview {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(120, 120, 120, 0.28);
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Dark mode override for protected preview */
+html.dark .protected-preview {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.protected-preview__title {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+}
+
+.protected-preview__text,
+.protected-preview__caption {
+  margin: 0 0 0.7rem;
+}
+
+.protected-preview__action {
+  margin: 0;
+}
+
+.protected-preview__caption {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .protected-access {
+    padding: 1.25rem;
+  }
+
+  .protected-access__countdown,
+  .protected-access__challenge {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .protected-access__actions {
+    flex-direction: column;
+  }
+}
