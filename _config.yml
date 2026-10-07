@@ -3,6 +3,7 @@
 # Site settings
 title: ""
 url: https://neuralnishann.github.io
+baseurl: ""
 name: "SMG Arafat N."
 email: neuralnishan@protonmail.com
 logo: /images/pro_pic_4.png
@@ -10,14 +11,14 @@ timezone: Europe/Berlin
 author:
   name: SMG Arafat N.
   avatar: /images/pro_pic_6.jpg
-  uri: https://neuralnishan.pro
+  uri: https://neuralnishann.github.io
   email: neuralnishan@protonmail.com
   bio: Building and Shipping AI at Scale
   location: Neural Universe Lab(NUL)
   github: neuralnishan
   linkedin: smnishan
   twitter: neuralnishan
-  url: https://neuralnishan.pro
+  url: https://neuralnishann.github.io
 
 # Analytics
 google_analytics_id:

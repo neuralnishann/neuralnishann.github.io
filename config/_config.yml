@@ -30,23 +30,23 @@ name: "S M G Arafat N."
 email: neuralnishan@protonmail.com
 logo: /assets/images/pro_pic_4.png
 description: "Azure AI & Data Solutions Architect | Building production-ready AI/ML solutions"
-url: "https://neuralnishan.pro"
+url: "https://neuralnishann.github.io"
 baseurl: ""
-repository: "neuralnishan/neuralnishan.github.io"
+repository: "neuralnishann/neuralnishann.github.io"
 timezone: Europe/Berlin
 
 # Author Information
 author:
   name: S M G Arafat N.
   avatar: /assets/images/pro_pic_6.jpg
-  uri: https://neuralnishan.pro
+  uri: https://neuralnishann.github.io
   email: neuralnishan@protonmail.com
   bio: Azure AI & Data Solutions Architect | Building and Shipping AI at Scale ⚙️@NUL | AI Research
   location: Neural Universe Lab (NUL)
   github: neuralnishan
   linkedin: smnishan
   twitter: neuralnishan
-  url: https://neuralnishan.pro
+  url: https://neuralnishann.github.io
 
 # Analytics
 google_analytics_id:
