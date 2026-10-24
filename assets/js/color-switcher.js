@@ -6,8 +6,8 @@
 (function () {
   const STORAGE_KEY = 'color-theme';
   const STORAGE_VERSION_KEY = 'color-theme-version';
-  const DEFAULT_THEME = 'ocean';
-  const STORAGE_VERSION = 'ocean-default-v1';
+  const DEFAULT_THEME = 'cyan';
+  const STORAGE_VERSION = 'cyan-default-v1';
 
   // Color theme definitions
   const colorThemes = {
@@ -965,7 +965,9 @@
       const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
       if (stored && colorThemes[stored]) {
         // Migrate visitors who still have an old auto-saved default theme.
-        if ((!storedVersion && stored === 'default') || (storedVersion === 'neon-default-v1' && stored === 'neon')) {
+        if ((!storedVersion && stored === 'default') ||
+            (storedVersion === 'neon-default-v1' && stored === 'neon') ||
+            (storedVersion === 'ocean-default-v1' && stored === 'ocean')) {
           savedTheme = DEFAULT_THEME;
         } else {
           savedTheme = stored;
