@@ -5,13 +5,13 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://neuralnishann.github.io",
+  "@id": "{{ site.url }}",
   "name": "Site Owner",
-  "url": "https://neuralnishann.github.io",
+  "url": "{{ site.url }}",
   "email": "neuralnishan@protonmail.com",
   "jobTitle": "Azure AI & Data Solutions Architect",
   "description": "Expert in Cloud Computing, AI/ML, Data Engineering, and DevOps with 3+ years of hands-on Azure Cloud experience",
-  "image": "https://neuralnishann.github.io/images/pro_pic_7.png",
+  "image": "{{ site.url }}/images/pro_pic_7.png",
   "sameAs": [
     "https://www.linkedin.com/in/neuralnishan",
     "https://github.com/neuralnishan",
@@ -42,7 +42,7 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Azure AI & Data Solutions Architect",
-  "url": "https://neuralnishann.github.io",
+  "url": "{{ site.url }}",
   "description": "Professional portfolio and blog by Azure AI & Data Solutions Architect sharing expertise in cloud computing, AI/ML, and data engineering",
   "creator": {
     "@type": "Person",
@@ -50,7 +50,7 @@
   },
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://neuralnishann.github.io/search?q={search_term}",
+    "target": "{{ site.url }}/search?q={search_term}",
     "query-input": "required name=search_term"
   }
 }
@@ -67,7 +67,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://neuralnishann.github.io"
+      "item": "{{ site.url }}"
     }
   ]
 }
