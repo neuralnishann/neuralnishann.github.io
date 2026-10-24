@@ -27,8 +27,6 @@ Creates optimized build in `_site/` directory.
 # Ruby gems
 bundle install
 
-# Node packages
-npm install
 ```
 
 ## 📁 File Locations
@@ -207,7 +205,6 @@ neuralnishan.github.io/
 ├── docs/
 ├── _site/ (generated)
 ├── Gemfile
-├── package.json
 ├── README.md
 └── CNAME
 ```

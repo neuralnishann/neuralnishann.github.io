@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: LFS158: Introduction to Kubernetes'
 permalink: '/credential-access/lfs158-introduction-to-kubernetes-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/thelinuxfoundation/certificates/Introduction to Kubernetes LFS158.pdf'
 ---
-
-{% include protected-access-card.html %}

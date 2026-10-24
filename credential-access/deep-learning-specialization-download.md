@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Deep Learning Specialization'
 permalink: '/credential-access/deep-learning-specialization-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/coursera/Deep%20Learning.pdf'
 ---
-
-{% include protected-access-card.html %}

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Deeplearning.AI TensorFlow Specialization'
 permalink: '/credential-access/deeplearning-ai-tensorflow-specialization-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/coursera/DeepLearning.AI%20TensorFlow%20Developer.pdf'
 ---
-
-{% include protected-access-card.html %}

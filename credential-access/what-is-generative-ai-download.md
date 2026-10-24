@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: What Is Generative AI?'
 permalink: '/credential-access/what-is-generative-ai-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/linkedinlearning/CertificateOfCompletion_What_Is_Generative_AI.pdf'
 ---
-
-{% include protected-access-card.html %}

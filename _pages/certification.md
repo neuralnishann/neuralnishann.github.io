@@ -39,7 +39,7 @@ redirect_from:
 
 | Code | Certification | Verification | Certificate | Date Obtained | Expiration |
 |------|---------------|--------------|-------------|---------------|------------|
-| AI Orchestration Fundamentals | Astronomer Certified for AI Orchestration Fundamentals | [Verify](https://www.credly.com/badges/441cc616-6dba-4d9b-882f-c1996f33a48c) | — | — | No Expiration |
+| AI Orchestration Fundamentals | Astronomer Certified for AI Orchestration Fundamentals | [Verify](https://www.credly.com/badges/441cc616-6dba-4d9b-882f-c1996f33a48c) | — | 2026-10-07 | No Expiration |
 | DAG Authoring (Airflow 3) | Astronomer Certification DAG Authoring for Apache Airflow 3 | [Verify](/credential-access/dag-authoring-airflow-3-verify/) | [View](/credential-access/dag-authoring-airflow-3-view/) | 2025-09-18 | No Expiration |
 | Airflow 101 (Airflow 3) | Astronomer Certification for Apache Airflow 3 Fundamentals | [Verify](/credential-access/airflow-101-airflow-3-verify/) | [View](/credential-access/airflow-101-airflow-3-view/) | 2025-09-18 | No Expiration |
 

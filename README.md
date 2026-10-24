@@ -16,7 +16,6 @@ SSS
 
 - Ruby 2.7+ with Bundler
 - Git
-- (Optional) Node.js for npm packages
 
 ### Setup
 
@@ -27,7 +26,6 @@ cd neuralnishan.github.io
 
 # Install dependencies
 bundle install
-npm install
 
 # Start development server
 # Windows:

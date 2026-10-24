@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Data Science Virtual Experience'
 permalink: '/credential-access/data-science-virtual-experience-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/Forage/DS-Virtual-Exp.pdf'
 ---
-
-{% include protected-access-card.html %}

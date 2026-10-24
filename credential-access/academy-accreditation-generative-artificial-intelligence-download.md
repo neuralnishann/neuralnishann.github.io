@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Academy Accreditation - Generative Artificial Intelligence'
 permalink: '/credential-access/academy-accreditation-generative-artificial-intelligence-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/databricks/certificates/databricks_generative_ai_fundamentals_6t3up1kk_1755875618503.pdf'
 ---
-
-{% include protected-access-card.html %}

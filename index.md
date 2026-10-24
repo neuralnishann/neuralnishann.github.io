@@ -3,7 +3,6 @@ layout: single
 permalink: /
 excerpt: "About me"
 author_profile: true
-date: 2026-02-20
 ---
 
 <div id="about" style="scroll-margin-top: 100px; padding-top: 2rem;">
@@ -12,6 +11,8 @@ date: 2026-02-20
 
 <style>
 /* Landing Page Layout Improvements */
+#main { padding-left: .75rem !important; padding-right: .75rem !important; }
+.page__content { padding: clamp(.75rem, 1.8vw, 1.15rem) !important; }
 #main {
   background: var(--bg);
 }
@@ -45,8 +46,9 @@ date: 2026-02-20
 }
 
 @media (max-width: 768px) {
+  .page__content { padding: .75rem !important; }
   #about {
-    padding-top: 1rem;
+    padding-top: .5rem;
   }
 }
 </style>

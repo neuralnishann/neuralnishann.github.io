@@ -312,7 +312,6 @@ neuralnishan.github.io/
 ├── 📄 README.md        (Main readme)
 ├── 📄 _config.yml      (Current config)
 ├── 📄 Gemfile          (Dependencies)
-├── 📄 package.json     (Node dependencies)
 ├── 📄 CNAME            (Domain config)
 └── 📄 LICENSE
 ```

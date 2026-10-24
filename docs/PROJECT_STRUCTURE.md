@@ -9,7 +9,6 @@ neuralnishan.github.io/
 │   ├── _config.yml                 # Main Jekyll config
 │   ├── Gemfile                     # Ruby dependencies
 │   ├── Gemfile.lock
-│   ├── package.json
 │   ├── CNAME                       # GitHub Pages custom domain
 │   ├── robots.txt                  # SEO robots configuration
 │   ├── README.md                   # Project documentation
@@ -241,7 +240,6 @@ Files excluded from Git:
 - `_site/` - Build output
 - `.jekyll-cache/` - Cache files
 - `.bundle/` - Bundle configuration
-- `node_modules/` - Node dependencies
 - `.DS_Store` - macOS files
 - `Thumbs.db` - Windows files
 
@@ -287,8 +285,6 @@ Files excluded from Git:
 ### Managing Dependencies
 1. Update `Gemfile` for Ruby packages
 2. Run `bundle update` to install
-3. Update `package.json` for Node packages
-4. Run `npm install` to install
 
 ## 📈 Performance
 

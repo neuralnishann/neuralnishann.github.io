@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Machine Learning Specialization'
 permalink: '/credential-access/machine-learning-specialization-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/coursera/Machine%20Learning%20by%20Deeplearning.AI%20&%20Stanford.pdf'
 ---
-
-{% include protected-access-card.html %}

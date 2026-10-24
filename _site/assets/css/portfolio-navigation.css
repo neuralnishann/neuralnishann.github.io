@@ -136,6 +136,7 @@
   border: 1px solid var(--primary) !important;
   background: var(--primary) !important;
   color: #fff !important;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease !important;
 }
 
 .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:hover,
@@ -145,6 +146,20 @@
   border-color: var(--primary-dark, #134e4a) !important;
   background: var(--primary-dark, #134e4a) !important;
   color: #fff !important;
+  transform: translateY(-2px) scale(1.025) !important;
+  box-shadow: 0 7px 18px color-mix(in srgb, var(--primary-dark, #134e4a) 28%, transparent) !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:active,
+.masthead .greedy-nav .hidden-links > li > a:active {
+  transform: translateY(0) scale(.98) !important;
+  box-shadow: none !important;
+}
+
+.masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:focus-visible,
+.masthead .greedy-nav .hidden-links > li > a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--primary) 55%, white);
+  outline-offset: 3px;
 }
 
 .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link[aria-current="page"],
@@ -165,5 +180,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link { transition: none !important; }
+  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link,
+  .masthead .greedy-nav .hidden-links > li > a { transition: none !important; }
+  .masthead .greedy-nav .visible-links > li > a.enterprise-nav__link:hover,
+  .masthead .greedy-nav .hidden-links > li > a:hover { transform: none !important; }
 }

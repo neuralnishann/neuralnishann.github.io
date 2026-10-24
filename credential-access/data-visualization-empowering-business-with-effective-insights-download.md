@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Data Visualization: Empowering Business with Effective Insights'
 permalink: '/credential-access/data-visualization-empowering-business-with-effective-insights-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/Forage/DataViz-Forage.pdf'
 ---
-
-{% include protected-access-card.html %}

@@ -137,7 +137,6 @@ exclude:
   - .github
   - .vscode
   - node_modules
-  - package.json
   - vendor
   - .bundle
   - Gemfile

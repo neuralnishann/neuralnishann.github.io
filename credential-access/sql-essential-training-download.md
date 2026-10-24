@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: SQL Essential Training'
 permalink: '/credential-access/sql-essential-training-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/linkedinlearning/CertificateOfCompletion_SQL_Essential_Training.pdf'
 ---
-
-{% include protected-access-card.html %}

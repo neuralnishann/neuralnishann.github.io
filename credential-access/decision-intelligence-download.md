@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Decision Intelligence'
 permalink: '/credential-access/decision-intelligence-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/linkedinlearning/CertificateOfCompletion_Decision_Intelligence.pdf'
 ---
-
-{% include protected-access-card.html %}

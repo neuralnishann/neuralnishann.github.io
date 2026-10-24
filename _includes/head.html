@@ -40,6 +40,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+<!-- Apply a saved theme before stylesheets render to prevent a color flash on page navigation. -->
+<script>
+  try {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') document.documentElement.classList.remove('dark');
+    if (savedTheme === 'dark') document.documentElement.classList.add('dark');
+  } catch (error) {}
+</script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

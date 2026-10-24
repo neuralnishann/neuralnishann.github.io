@@ -13,7 +13,6 @@ Welcome! This guide will help you contribute to the portfolio website.
 2. **Install Dependencies**
    ```bash
    bundle install
-   npm install
    ```
 
 3. **Create Feature Branch**

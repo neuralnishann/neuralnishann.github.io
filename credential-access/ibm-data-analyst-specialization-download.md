@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: IBM Data Analyst Specialization'
 permalink: '/credential-access/ibm-data-analyst-specialization-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/coursera/IBM%20Data%20Analyst.pdf'
 ---
-
-{% include protected-access-card.html %}

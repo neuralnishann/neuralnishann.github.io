@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Academy Accreditation - Databricks Fundamentals'
 permalink: '/credential-access/academy-accreditation-databricks-fundamentals-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/databricks/certificates/databricks_fundamentals_11ux4sak_1755614743141.pdf'
 ---
-
-{% include protected-access-card.html %}

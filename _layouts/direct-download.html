@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Starting download…</title>
+  </head>
+  <body>
+    <p><a id="direct-download-link" href="{{ page.protected_url | escape }}" download>Download certificate</a></p>
+    <script>
+      (function () {
+        var link = document.getElementById('direct-download-link');
+        link.href = {{ page.protected_url | jsonify }};
+        link.click();
+      }());
+    </script>
+  </body>
+</html>

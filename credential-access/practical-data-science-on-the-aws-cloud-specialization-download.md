@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: direct-download
 title: 'Protected Access: Practical Data Science on the AWS Cloud Specialization'
 permalink: '/credential-access/practical-data-science-on-the-aws-cloud-specialization-download/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'download'
 protected_action: 'Download File'
 protected_url: '/files/specialization/coursera/Practical%20Data%20Science%20on%20the%20AWS%20Cloud.pdf'
 ---
-
-{% include protected-access-card.html %}
