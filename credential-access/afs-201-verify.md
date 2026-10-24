@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: AFS-201'
 permalink: '/credential-access/afs-201-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=HMSujjN0DbOGNwNFaf7BSWxyKIszZyh9j11hwWmMXFh9w2//9/YntgBFH4fuDrXm'
 ---
 
-{% include protected-access-card.html %}

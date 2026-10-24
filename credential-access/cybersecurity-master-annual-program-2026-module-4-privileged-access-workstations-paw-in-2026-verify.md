@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Cybersecurity Master Annual Program 2026: Module 4: Privileged Access Workstations (PAW) in 2026'
 permalink: '/credential-access/cybersecurity-master-annual-program-2026-module-4-privileged-access-workstations-paw-in-2026-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.credential.net/548933c2-e65d-40cb-ab97-7845efe6ac82#acc.0qeTbxIH'
 ---
 
-{% include protected-access-card.html %}

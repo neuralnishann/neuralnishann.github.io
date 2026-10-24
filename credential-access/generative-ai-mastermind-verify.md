@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Generative AI Mastermind'
 permalink: '/credential-access/generative-ai-mastermind-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learners.outskill.com/certificate/1e245eec-55ed-49b4-82f0-e07a403f2e41'
 ---
 
-{% include protected-access-card.html %}

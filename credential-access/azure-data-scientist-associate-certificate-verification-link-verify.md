@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Azure Data Scientist Associate Certificate Verification Link'
 permalink: '/credential-access/azure-data-scientist-associate-certificate-verification-link-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/api/credentials/share/en-us/SMGazzaliArafatNishan-4645/A2C48D4C8739EFA2?sharingId=A489942037851738'
 ---
 
-{% include protected-access-card.html %}

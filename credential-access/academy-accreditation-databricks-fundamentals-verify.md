@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Academy Accreditation - Databricks Fundamentals'
 permalink: '/credential-access/academy-accreditation-databricks-fundamentals-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://credentials.databricks.com/b70b437c-d92e-4662-ae21-040ecf844f73#acc.lDJxGpaX'
 ---
 
-{% include protected-access-card.html %}

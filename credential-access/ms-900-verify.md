@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: MS-900'
 permalink: '/credential-access/ms-900-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/1aaa1818f8168b1'
 ---
 
-{% include protected-access-card.html %}

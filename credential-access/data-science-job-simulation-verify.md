@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Data Science Job Simulation'
 permalink: '/credential-access/data-science-job-simulation-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/BCG%20/Tcz8gTtprzAS4xSoK_BCG_5Pjc8nnpPsLHjjRzY_1700835543297_completion_certificate.pdf'
 ---
 
-{% include protected-access-card.html %}

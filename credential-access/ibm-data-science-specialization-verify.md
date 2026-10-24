@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: IBM Data Science Specialization'
 permalink: '/credential-access/ibm-data-science-specialization-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.coursera.org/account/accomplishments/professional-cert/XSPF7B7Z99U4'
 ---
 
-{% include protected-access-card.html %}

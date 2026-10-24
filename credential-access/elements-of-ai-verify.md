@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Elements of AI'
 permalink: '/credential-access/elements-of-ai-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://certificates.mooc.fi/validate/nqz4u6z4amg'
 ---
 
-{% include protected-access-card.html %}

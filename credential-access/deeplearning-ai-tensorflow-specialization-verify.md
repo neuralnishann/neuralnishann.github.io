@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Deeplearning.AI TensorFlow Specialization'
 permalink: '/credential-access/deeplearning-ai-tensorflow-specialization-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.coursera.org/account/accomplishments/professional-cert/LF4AHT9XH5Q6'
 ---
 
-{% include protected-access-card.html %}

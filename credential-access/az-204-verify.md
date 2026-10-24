@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: AZ-204'
 permalink: '/credential-access/az-204-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/93d8b03b2eae81c8'
 ---
 
-{% include protected-access-card.html %}

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Azure: Migrate and Modernize - Titan - (Microsoft GCPS)'
 permalink: '/credential-access/azure-migrate-and-modernize-titan-microsoft-gcps-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/microsoft/mslogos/azure-migrate-and-modernize-titan.png'
 ---
-
-{% include protected-access-card.html %}

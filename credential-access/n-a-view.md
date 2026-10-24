@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: N/A'
 permalink: '/credential-access/n-a-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/salesforce/salesforce_ai_associate_cert.png'
 ---
-
-{% include protected-access-card.html %}

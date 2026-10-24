@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: PL-300'
 permalink: '/credential-access/pl-300-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/81ab184bb00e00be'
 ---
 
-{% include protected-access-card.html %}

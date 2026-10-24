@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: DP-203'
 permalink: '/credential-access/dp-203-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/cc036a4b7affc9ae'
 ---
 
-{% include protected-access-card.html %}

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: AI-102'
 permalink: '/credential-access/ai-102-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://learn.microsoft.com/en-us/users/smgazzaliarafatnishan-4645/credentials/cab2713e62f9049a'
 ---
 
-{% include protected-access-card.html %}

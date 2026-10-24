@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Airflow 101 (Airflow 3)'
 permalink: '/credential-access/airflow-101-airflow-3-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.credly.com/go/lnUPGtX2'
 ---
 
-{% include protected-access-card.html %}

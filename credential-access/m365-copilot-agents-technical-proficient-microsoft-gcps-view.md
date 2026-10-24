@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: M365 Copilot + Agents - Technical Proficient (Microsoft  GCPS)'
 permalink: '/credential-access/m365-copilot-agents-technical-proficient-microsoft-gcps-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/microsoft/mslogos/m365-copilot-agents.png'
 ---
-
-{% include protected-access-card.html %}

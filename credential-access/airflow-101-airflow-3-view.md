@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Airflow 101 (Airflow 3)'
 permalink: '/credential-access/airflow-101-airflow-3-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/astronomer/certificates/astronomer_certification_for_apache_airflow_3_fundamentals.png'
 ---
-
-{% include protected-access-card.html %}

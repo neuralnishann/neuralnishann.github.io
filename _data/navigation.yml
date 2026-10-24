@@ -1,10 +1,6 @@
 # main links links
 main:
 
-  - title: "Blog"
-    url: /year-archive/
-    icon: "📝"
-
   - title: "Education"
     url: /education/
     icon: "🎓"

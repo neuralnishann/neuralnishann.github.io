@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Sell with confidence: Unify and grow your business with Microsoft Fabric - Proficient (Microsoft GCPS)'
 permalink: '/credential-access/sell-with-confidence-unify-and-grow-your-business-with-microsoft-fabric-proficient-microsoft-gcps-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.credly.com/badges/e67acc4a-273d-46cd-8fcb-b515b8b0562e/public_url'
 ---
 
-{% include protected-access-card.html %}

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: AI Workforce-Titan -â€‹ Sales Ready Titan (Microsoft GCPS)'
 permalink: '/credential-access/ai-workforce-titan-sales-ready-titan-microsoft-gcps-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/microsoft/mslogos/ai-workforce-titan.png'
 ---
-
-{% include protected-access-card.html %}

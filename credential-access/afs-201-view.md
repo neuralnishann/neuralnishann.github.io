@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: AFS-201'
 permalink: '/credential-access/afs-201-view/'
 author_profile: true
@@ -10,5 +10,3 @@ protected_mode: 'view'
 protected_action: 'Open File'
 protected_url: '/files/salesforce/salesforce_agentforce_specialist.png'
 ---
-
-{% include protected-access-card.html %}

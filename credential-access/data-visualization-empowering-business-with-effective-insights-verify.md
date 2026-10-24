@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Data Visualization: Empowering Business with Effective Insights Verification'
 permalink: '/credential-access/data-visualization-empowering-business-with-effective-insights-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Record'
 protected_url: '/files/specialization/Forage/DataViz-Forage.pdf'
 ---
 
-{% include protected-access-card.html %}

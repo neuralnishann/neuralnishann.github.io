@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: SOC Program Foundations Training'
 permalink: '/credential-access/soc-program-foundations-training-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: '/files/specialization/microsoft/Certificate_of_completion_SOC_Microsoft.pdf'
 ---
 
-{% include protected-access-card.html %}

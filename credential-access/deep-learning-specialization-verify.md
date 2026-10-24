@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Deep Learning Specialization'
 permalink: '/credential-access/deep-learning-specialization-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.coursera.org/account/accomplishments/specialization/4993PD76Z6SX'
 ---
 
-{% include protected-access-card.html %}

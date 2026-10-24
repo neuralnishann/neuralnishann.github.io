@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Meta Database Engineer Specialization'
 permalink: '/credential-access/meta-database-engineer-specialization-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.coursera.org/account/accomplishments/professional-cert/QYENHPXAWNMM'
 ---
 
-{% include protected-access-card.html %}

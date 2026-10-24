@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: Azure: Migrate and Modernize - Proficient (Microsoft GCPS)'
 permalink: '/credential-access/azure-migrate-and-modernize-proficient-microsoft-gcps-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.credly.com/badges/b2e6b42e-b926-4d5b-8b87-04ea6b185448/public_url'
 ---
 
-{% include protected-access-card.html %}

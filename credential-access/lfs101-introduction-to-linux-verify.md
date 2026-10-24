@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: redirect
 title: 'Protected Access: LFS101: Introduction to Linux'
 permalink: '/credential-access/lfs101-introduction-to-linux-verify/'
 author_profile: true
@@ -11,4 +11,3 @@ protected_action: 'Open Verification'
 protected_url: 'https://www.credly.com/earner/earned/badge/ad185f52-53c6-4acc-a87a-3bfa074799cd'
 ---
 
-{% include protected-access-card.html %}

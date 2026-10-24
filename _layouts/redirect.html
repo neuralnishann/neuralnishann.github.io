@@ -1,0 +1,17 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0;url={{ page.protected_url | escape }}">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="canonical" href="{{ page.protected_url | escape }}">
+    <title>Opening verification link…</title>
+    <script>window.location.replace({{ page.protected_url | jsonify }});</script>
+  </head>
+  <body>
+    <p>Opening verification link. <a href="{{ page.protected_url | escape }}">Continue</a>.</p>
+  </body>
+</html>
