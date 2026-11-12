@@ -45,25 +45,16 @@
     <a class="home-text-link" href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">→</span></a>
   </div>
   <p class="home-section-intro">Explore project write-ups spanning multimodal AI, computer vision, and secure cloud concepts.</p>
+  {% assign homepage_projects = site.projects | sort: 'date' | reverse %}
   <div class="home-project-grid">
-    <a class="home-project-card" href="{{ '/projects/2023-AICVTG-Project-3' | relative_url }}">
-      <span class="home-project-type">Computer vision · NLP</span>
-      <h3>Automatic image captioning</h3>
-      <p>Explored image-to-text generation with a Vision Transformer encoder and GPT-2 decoder.</p>
-      <span class="home-project-link">View project <span aria-hidden="true">↗</span></span>
-    </a>
-    <a class="home-project-card" href="{{ '/projects/2022-VQA-Project-1' | relative_url }}">
-      <span class="home-project-type">Multimodal AI</span>
-      <h3>Visual question answering</h3>
-      <p>Compared multimodal pipelines that pair image encoders with language models.</p>
-      <span class="home-project-link">View project <span aria-hidden="true">↗</span></span>
-    </a>
-    <a class="home-project-card" href="{{ '/projects/2022-SOTD-Project-2' | relative_url }}">
-      <span class="home-project-type">Cloud · Security</span>
-      <h3>Secure telemedicine dApp</h3>
-      <p>Designed a healthcare record-sharing concept using blockchain, IPFS, and smart contracts.</p>
-      <span class="home-project-link">View project <span aria-hidden="true">↗</span></span>
-    </a>
+    {% for post in homepage_projects limit: 3 %}
+      <a class="home-project-card" href="{{ post.url | relative_url }}">
+        <span class="home-project-type">{{ post.tags | first | default: 'Project' }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <span class="home-project-link">View project <span aria-hidden="true">↗</span></span>
+      </a>
+    {% endfor %}
   </div>
 </section>
 

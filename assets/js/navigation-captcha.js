@@ -59,16 +59,8 @@
     return !href || href === '#' || href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0;
   }
 
-  function isProtectedAccessPath(pathname) {
-    return /\/credential-access\//.test(pathname || '');
-  }
-
   function isProtectedFile(target, resolvedUrl) {
     if (!resolvedUrl || resolvedUrl.origin !== window.location.origin) {
-      return false;
-    }
-
-    if (isProtectedAccessPath(resolvedUrl.pathname)) {
       return false;
     }
 

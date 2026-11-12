@@ -10,8 +10,10 @@ author_profile: true
     This section showcases selected AI, computer vision, and data engineering projects, including problem context, implementation approach, technical stack, and deliverables.
   </p>
 
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+
   <div class="projects-grid">
-    {% for post in site.projects reversed %}
+    {% for post in sorted_projects %}
       <div class="project-card card">
         <div class="card-header">
           <div class="card-icon" style="background: linear-gradient(135deg, #f59e0b, #ec4899);">
