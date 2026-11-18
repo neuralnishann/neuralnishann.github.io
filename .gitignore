@@ -1,0 +1,12 @@
+# Jekyll generated output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Local Ruby bundle installation
+.bundle/
+vendor/bundle/
+
+# macOS
+.DS_Store
