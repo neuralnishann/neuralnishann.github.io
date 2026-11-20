@@ -8,9 +8,17 @@ redirect_from:
 ---
 # Work Experience
 
-### Cloud Solutions Architect  
+### Azure Cloud Solutions Architect  
 
 - **Duration:** 2025 - Present  
+
+### Jr. Data Analyst
+
+- **Duration:** 2022 - 2025
+
+### Jr. Software Developer Intern
+
+- **Duration:** 2022 - 2022
 
 # Volunteer Experience
 
@@ -18,4 +26,3 @@ redirect_from:
 
 - **Location:** Virtual
 - **Duration:** Jan 2025 - June 2026
-S
